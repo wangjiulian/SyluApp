@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">沈理工校园通</string>
+    <string name="title_section1">主页</string>
+    <string name="title_section2">课表查询</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="studentnum">学号</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="nickyname">昵称</string>
+
+    <drawable name="clr_normal">#1EA6AD</drawable>
+    <drawable name="clr_pressed">#0c6a6f</drawable>
+    <drawable name="lclr_normal">#1C86EE</drawable>
+    <drawable name="lclr_pressed">#104E8B</drawable>
+
+    <string name="account">用户名</string>
+    <string name="forgetpassword">忘记密码</string>
+    <string name="loginbutton">登陆</string>
+
+    <drawable name="clr_normal1">#1C86EE</drawable>
+    <drawable name="clr_pressed1">#104E8B</drawable>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_welcome">沈理工校园通</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+
+</resources>

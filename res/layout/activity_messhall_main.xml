@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="210dip" >
+ <!-- 230dp -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_messhall_vp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!--
+                 <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国家庭院校园区域名字体现"
+                />
+                -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="3dip"
+                    android:gravity="center" >
+
+                    <View
+                        android:id="@+id/v_messhall_dot0"
+                        style="@style/dot_style"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/v_messhall_dot1"
+                        style="@style/dot_style" />
+
+                    <View
+                        android:id="@+id/v_messhall_dot2"
+                        style="@style/dot_style" />
+
+                    <!--
+                <View
+                    android:id="@+id/v_messhall_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_messhall_dot4"
+                    style="@style/dot_style" />
+                    -->
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.dpl.syluapp.widget.MyGridView
+            android:id="@+id/mgv_messhall_mv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3" />
+        <TextView     android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="正在下载图片中。。。"/>
+        <LinearLayout
+  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:id="@+id/llyt_messhall_llCcasecade"
+    android:background="@android:color/white">
+	<LinearLayout android:id="@+id/llyt_messhall_casecade1"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="2dp"></LinearLayout>
+	<LinearLayout android:id="@+id/llyt_messhall_casecade2"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="2dp"></LinearLayout>
+	<LinearLayout android:id="@+id/llyt_messhall_casecade3"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="2dp"></LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

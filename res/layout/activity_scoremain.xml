@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" >
+
+        <TextView
+            android:id="@+id/tv_scoremain_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="姓名"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_scoremain_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_scoremain_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_scoremain_name"
+            android:text="学号"
+            android:visibility="gone"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科目总数"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_scoremain_testnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/tv1"
+            android:text="..."
+            android:textColor="#2CA4C5"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_scoremain_failtlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1" >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="负伤次数"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_scoremain_failnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv2"
+                android:text=".."
+                android:textColor="#2CA4C5"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_scoremain_successtlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="2dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_socremain_nofail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饿滴神啊，你竟然没挂过科！"
+                android:textSize="17sp"
+                />
+        </RelativeLayout>
+
+        
+    </RelativeLayout>
+        <Button
+            android:id="@+id/btn_grade"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#5CACEE"
+            android:text="学位课绩点计算"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_scoremain_faildetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="至今未通过的课程"
+            android:textColor="#E7E7E7"
+            android:textSize="12sp" />
+
+        <ListView
+         
+            android:id="@+id/lv_scoremain_faidlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+        </ListView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/lv_scoremain_faidlist"
+            android:layout_marginTop="10dp"
+            android:background="#C6C6C6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="历史成绩"
+            android:textColor="#E7E7E7"
+            android:textSize="12sp" />
+
+        <ListView
+              android:divider="@null"
+            android:id="@+id/lv_scoremain_commonlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

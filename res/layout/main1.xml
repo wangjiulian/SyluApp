@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="215dip"
+        android:layout_alignParentTop="true" >
+
+        <!-- 230dp -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/sv_buttonarea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/frameLayout1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/ln_buttonarea1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/newstudentzone"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_newstudentzone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="新生专区"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/coursesearch"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_coursesearch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="课程表"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/roomsearch"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_roomsearch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="空教室查询"
+                        android:textColor="#000000"
+                        android:textSize="13sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_buttonarea2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln_buttonarea1"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/schoolcampus"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_schoolcampus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="理工地图"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/booksearch"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_booksearch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="图书借阅"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/scoresearch"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_scoresearch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="成绩查询"
+                        android:textColor="#000000"
+                        android:textSize="13sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_buttonarea3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln_buttonarea2"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal"
+                android:paddingBottom="40dp" >
+
+                <RelativeLayout
+                    android:id="@+id/setting"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/icon_settinbg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:text="设置"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/unused1"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/unused2"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#000000" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/weekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="连接中"
+            android:textColor="#A3A3A3"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+         android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_weight="4.1"
+            android:background="@drawable/connerallshallowblueleft" >
+
+            <TextView
+                android:id="@+id/librarydetail_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="王二麻子"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/connerallshallowblueright" >
+
+            <TextView
+                android:id="@+id/librarydetail_userlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:gravity="clip_vertical"
+                android:text="本科生"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/connerallshallowblueleft" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:text="累计借阅"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/library_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1C86EE" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:text="还可借阅"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/library_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/connerallshallowblueright" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:text="欠款金额"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/library_arrears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="00"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/library_listinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

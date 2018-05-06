@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 底部 -->
+
+    <RelativeLayout
+        android:id="@+id/MyLayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/MyLayout_bottom2"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#5CACEE"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/GoBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/flg" />
+
+            <Button
+                android:id="@+id/BackBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/flbb" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 中部 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/MyLayout_bottom"
+        android:orientation="horizontal" >
+
+        <WebView
+            android:id="@+id/webshow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

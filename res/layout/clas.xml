@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"   
+     
+      android:layout_height="0dp"
+      android:text="1 \n\n2 "
+      
+      />
+   <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"   
+      android:layout_height="0dp"
+      android:text="3 \n\n4 "
+      
+      />
+    <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"   
+      android:layout_height="0dp"
+      android:text="5 \n\n6 "
+      
+      />
+     <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"  
+     
+      android:layout_height="0dp"
+      android:text="7 \n\n8 "
+      
+      />
+      <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"   
+      android:layout_height="0dp"
+      android:text="9 \n\n10"
+      
+      />
+       <TextView 
+      android:layout_weight="1"
+      android:layout_width="fill_parent"
+      android:gravity="center"  android:background="#C1CDC1"   
+      android:layout_height="0dp"
+      android:text="11\n\n12"
+      
+      />
+  
+
+</LinearLayout>

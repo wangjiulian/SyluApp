@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CACEE"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/aboutlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/aboutlogo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/aboutlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/shenligongxioayuantong" />
+
+    <TextView
+        android:id="@+id/tv_studio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="沈阳理工大学  DPL工作室出品"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Copyright©CreatingEv 2015 All Rights Reserved"
+        android:textColor="@color/gray_title_txt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="V0.1"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+         />
+
+</RelativeLayout>

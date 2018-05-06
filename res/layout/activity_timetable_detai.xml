@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/tv_detail_classBname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="计算机导论" />
+
+    <TextView
+        android:id="@+id/tv_detail_classname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_detail_classBname"
+        android:layout_marginTop="35dp"
+        android:text="名称:   计算机导论" />
+
+    <TextView
+        android:id="@+id/tv_detail_roomname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_detail_classname"
+        android:layout_marginTop="31dp"
+        android:text="教室:    A-110" />
+
+    <TextView
+        android:id="@+id/tv_detail_teachname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_detail_roomname"
+        android:layout_marginTop="26dp"
+        android:text="老师:   小明" />
+
+    <TextView
+        android:id="@+id/tv_detail_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_detail_teachname"
+        android:layout_marginTop="24dp"
+        android:text="周数:   11-18周" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_libraryadapter_bname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_libraryadapter_bname"
+        android:layout_marginTop="15dp"
+        android:text="借阅日期"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_libraryadapter_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_libraryadapter_bname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title2"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_libraryadapter_breturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_libraryadapter_borrow"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="15dp"
+        android:text="应还日期"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_libraryadapter_brenew"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_alignBottom="@+id/title3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/renew"
+        android:text="Button" />
+
+</RelativeLayout>

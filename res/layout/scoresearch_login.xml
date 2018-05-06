@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    
+    
+    
+     <ImageView
+        android:id="@+id/image_scoresearchlogin_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_scoresearch" />
+
+    <EditText
+        android:id="@+id/et_scoresearch_user"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_scoresearch_pswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="输入您的教学网账号" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_scoresearch_pswd"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlyt_socresearch_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="输入您的教学网密码"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/rlyt_socresearch_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    
+    
+    
+</RelativeLayout>

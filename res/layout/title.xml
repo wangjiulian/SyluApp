@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+  <TextView 
+  
+     android:layout_width="20dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" 
+      android:background="#C2C2C2"
+     
+     
+      />
+   <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Mon"
+      
+      />
+    <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Tues"
+      
+      />
+     <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Wed"
+      
+      />
+      <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Thu"
+      
+      />
+       <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Fri"
+      
+      />
+        <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Sat"
+      
+      />
+         <TextView 
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:gravity="center"
+      android:layout_height="wrap_content" android:background="#C2C2C2"
+      android:text="Sun"
+      
+      />
+    
+
+</LinearLayout>

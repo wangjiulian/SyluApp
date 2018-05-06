@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/img_frame_background" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/lv_menu_tou"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/touxx"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/tv_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lv_menu_tou"
+            android:layout_centerHorizontal="true"
+            android:text="小明"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_menu_jie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lv_menu_tou"
+            android:layout_alignLeft="@+id/tv_menu_name"
+            android:layout_marginBottom="18dp"
+            android:text="2011屆"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_menu_bbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_menu_note"
+        android:layout_below="@+id/tv_menu_note"
+        android:layout_marginTop="20dp"
+        android:text="理工BBS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_menu_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_menu_bbs"
+        android:layout_below="@+id/tv_menu_bbs"
+        android:layout_marginTop="20dp"
+        android:text="积分活动"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_menu_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_menu_exercise"
+        android:layout_below="@+id/tv_menu_exercise"
+        android:layout_marginTop="20dp"
+        android:text="意见反馈"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_menu_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_menu_feedback"
+        android:layout_below="@+id/tv_menu_feedback"
+        android:layout_marginTop="68dp"
+        android:text="设置"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_menu_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="23dp"
+        android:text="我的通知"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_menu_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_menu_setting"
+        android:layout_alignBottom="@+id/tv_menu_setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp"
+        android:text="退出"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

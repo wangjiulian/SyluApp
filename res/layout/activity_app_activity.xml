@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/constanttitlebar_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar"
+        android:background="#5CACEE" >
+
+        <RelativeLayout
+            
+            android:id="@+id/rrlt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/topbar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                
+                android:id="@+id/back"
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/flb" />
+            
+            <TextView 
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/back"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:text="返回"
+                
+                
+                />
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spi_timetable_sele"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/constanttitlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/brn_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:text="注销"
+            android:background="@color/transparent"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

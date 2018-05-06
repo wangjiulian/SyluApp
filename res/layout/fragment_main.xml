@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <RelativeLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="210dip" >
+
+                <!-- 230dp -->
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center" >
+
+                        <View
+                            android:id="@+id/v_dot0"
+                            style="@style/dot_style"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/dot_focused" />
+
+                        <View
+                            android:id="@+id/v_dot1"
+                            style="@style/dot_style" />
+
+                        <View
+                            android:id="@+id/v_dot2"
+                            style="@style/dot_style" />
+
+                        <!--
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot4"
+                    style="@style/dot_style" />
+                        -->
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_frg_timetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/frameLayout1"
+                android:layout_marginTop="26dp"
+                android:text="课表查询" />
+
+            <Button
+                android:id="@+id/btn_frg_emptyroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_frg_timetable"
+                android:layout_alignBottom="@+id/btn_frg_timetable"
+                android:layout_centerHorizontal="true"
+                android:text="空教室查询" />
+
+            <Button
+                android:id="@+id/btn_frg_libraryselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_frg_emptyroom"
+                android:layout_alignBottom="@+id/btn_frg_emptyroom"
+                android:layout_alignParentRight="true"
+                android:text="图书借阅" />
+
+            <Button
+                android:id="@+id/btn_frg_mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_frg_timetable"
+                android:layout_marginTop="42dp"
+                android:text="最爱食堂" />
+
+            <Button
+                android:id="@+id/btn_frg_campusinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_frg_mess"
+                android:layout_alignRight="@+id/btn_frg_emptyroom"
+                android:text="校园热点" />
+
+            <Button
+                android:id="@+id/btn_frg_socre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_frg_libraryselect"
+                android:layout_marginTop="42dp"
+                android:layout_toRightOf="@id/btn_frg_campusinfo"
+                android:text="成绩查询" />
+        </RelativeLayout>
+    
+
